@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+    
+    <div data-role="page">
+        
+        <!--패널-->
+        <div data-role="panel" id="panel" data-display="overlay">
+            <form>
+                <h3>로그인</h3>
+                <label for="id">아이디:</label>
+                <input type="text" name="id" id="id" data-mini="true">
+                <label for="pass">비밀번호:</label>
+                <input type="password" name="pass" id="pass" data-mini="true">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#" data-role="button">로그인</a></div>
+                    <div class="ui-block-b"><a href="#" data-role="button">취소</a></div>
+                </div>
+            </form>    
+        </div>
+
+        <!--첫화면-->
+        <div data-role="header" style="background-color: white;">
+            <a href="#panel" data-icon="bars">메뉴</a>
+            <h1><a href="#"><img src="logo.jpg" style="width: 80%;"></a></h1>
+            
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="dcu1.html" rel="external" class="ui-btn-active">대학정보</a></li>
+                    <li><a href="dcu2.html" rel="external">대학/대학원</a></li>
+                    <li><a href="dcu3.html" rel="external">입학</a></li>
+                    <li><a href="dcu4.html" rel="external">교육/생활</a></li>
+
+                </ul>        
+
+            </div>
+        </div>
+    
+        <div data-role="content">
+            <img src="main.jpg" style="text-align:center;width:80%">
+            <p><h2 style="text-align:center">DCU QUICK MENU</h2></p>
+            <p><h4 style="text-align:center">대구가톨릭대학교의 퀵메뉴를 소개합니다.</h4></p>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#page2" data-transition="flip">DCU 포커스</a></li> 
+                <li><a href="#page3" data-transition="slideup">DCU 소식</a></li>
+                <li><a href="#">I am DCU</a></li>
+                <li><a href="#">DCU 미디어</a></li>
+                <li><a href="#">DCU 서비스</a></li>
+
+
+            </ul>
+        </div>
+
+        <div data-role="footer" data-fullscreen="true" data-position="fixed">
+           <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="home">홈</a></li>
+                    <li><a href="#" data-icon="camera">카메라</a></li>
+                    <li><a href="#" data-icon="comment">문자</a></li>
+                    <li><a href="#" data-icon="calendar">달력</a></li>
+                    <li><a href="#" data-icon="gear">설정</a></li>
+                </ul>
+           </div>
+           
+            <!--<div data-role="controlgroup" data-type="horizontal">
+                <a href="#">메인</a>
+                <a href="#">카테고리</a>
+                <a href="#">즐겨찾기</a>
+                <a href="#">현재위치</a>
+                <a href="#">SMS</a>
+            </div>-->
+
+        </div>
+    </div>    
+    <!--내부페이지-->
+    <div data-role="page" id="page2">
+        <div data-role="panel" id="panel" data-display="overlay">
+            <form>
+                <h3>로그인</h3>
+                <label for="id">아이디:</label>
+                <input type="text" name="id" id="id" data-mini="true">
+                <label for="pass">비밀번호:</label>
+                <input type="password" name="pass" id="pass" data-mini="true">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#" data-role="button">로그인</a></div>
+                    <div class="ui-block-b"><a href="#" data-role="button">취소</a></div>
+                </div>
+            </form>    
+        </div>
+        <div data-role="header"data-position="fixed">
+            <div data-role="header">
+                <a href="#panel" data-icon="bars">메뉴</a>
+                <h1><a href="#"><img src="logo.jpg" style="width:100%;"></a></h1>
+                
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="dcu1.html" rel="external" class="ui-btn-active">대학정보</a></li>
+                        <li><a href="dcu2.html" rel="external">대학/대학원</a></li>
+                        <li><a href="dcu3.html" rel="external">입학</a></li>
+                        <li><a href="dcu4.html" rel="external">교육/생활</a></li>
+    
+                    </ul>        
+    
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+            <p><h2 style="text-align: center;">DCU 포커스</h2></p>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="text-align: center;"><img src="a.jpg" style="width: 90%;"></div>
+                <div class="ui-block-b" style="text-align: center;"><img src="b.jpg" style="width: 90%;"></div>
+                <div class="ui-block-c" style="text-align: center;"><img src="c.jpg" style="width: 90%;"></div>
+
+                <div class="ui-block-a" style="text-align: center;"><img src="d.jpg" style="width: 90%;"></div>
+                <div class="ui-block-b" style="text-align: center;"><img src="d.jpg" style="width: 90%;"></div>
+                <div class="ui-block-c" style="text-align: center;"><img src="f.jpg" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        <div data-role="content">
+            <p><h2>DCU 소식</h2></p>
+            <div class="ui-grid-a">
+                <div class="ui-grid-a">1</div>
+            </div>
+        </div>
+        <div data-role="footer"data-position="fixed">
+            <div data-role="footer"data-position="fixed">
+                <div data-role="navbar">
+                     <ul>
+                         <li><a href="index.html" data-icon="home">홈</a></li>
+                         <li><a href="#" data-icon="camera">카메라</a></li>
+                         <li><a href="#" data-icon="comment">문자</a></li>
+                         <li><a href="#" data-icon="calendar">달력</a></li>
+                         <li><a href="#" data-icon="gear">설정</a></li>
+                     </ul>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
